@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio website</title>
+  <link rel="stylesheet" href="style.css" />
+
+
+  <script src="https://kit.fontawesome.com/16a089e6af.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!--------- home section ------------ -->
+
+  <div id="header">
+    <div class="container">
+      <nav>
+        <h1><span class="span1">S</span><span>J</span></h1>
+
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Front-end Developer</p>
+        <h1>Hi, I am <span>Shivang Jha</span> <br />from India.</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- --about section starts from here  ====-->
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="column1">
+          <img src="images/about.jpg" alt="">
+
+        </div>
+        <div class="column2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Hi, I’m Shivang, a passionate Programmer dedicated to crafting innovative solutions that
+            leave an impact. With a strong background in development, I thrive in turning ideas into reality
+            by blending creativity and strategy. Over the years, I’ve worked on projects ranging from dynamic websites
+            to cutting-edge apps, consistently delivering excellence.
+
+            Beyond work, I’m fueled by my love for technology, photography, and
+            adventure. I believe in lifelong learning, embracing challenges, and always pushing boundaries. Whether
+            collaborating with a team or working independently, I’m driven to make every project meaningful and
+            memorable. Let’s connect and create something extraordinary!</p>
+
+          <div class="tab-titles">
+            <p class="title-links active-link" onclick="opentab('Skills', this)">Skills</p>
+            <p class="title-links" onclick="opentab('Experience', this)">Experience</p>
+            <p class="title-links" onclick="opentab('Education', this)">Education</p>
+
+          </div>
+
+          <div class="tab-contents active-tab" id="Skills">
+            <ul>
+              <li><span>DSA</span><br>Data structures and algorithm</li>
+              <li><span>Web dev</span><br>Designing web application</li>
+              <li><span>App dev</span><br>Designing application for android/ios</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="Experience">
+            <ul>
+              <li><span>2023-current</span><br>Btech in CSE</li>
+              <li><span>2020-2022</span><br>Designing web application</li>
+              <li><span>2019-2020</span><br>Designing application for android/ios</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="Education">
+            <ul>
+              <li><span>2023-2027</span><br>BTECH from Dronacharya college of engineering</li>
+              <li><span>2022-2023</span><br>Lions English School</li>
+              <li><span>2019-2020</span><br>Lions English School</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ---------services section starts from here------ -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div style="cursor: pointer;">
+          <i class="fa-solid fa-crop"></i>
+          <h2>Web design</h2>
+          <p>Web design is the process of planning, conceptualizing, and creating the visual and functional aspects of a
+            website. It involves designing the layout, structure, color schemes, typography, images, and interactive
+            features to ensure a website is visually appealing, user-friendly, and aligned with its purpose.
+          </p>
+          <a href="#" style="color: burlywood;">Lean more-></a>
+        </div>
+        <div style="cursor: pointer;">
+          <i class="fa-brands fa-app-store"></i>
+          <h2>App development</h2>
+          <p>App development is the process of creating software applications that are designed to run on mobile
+            devices, such as smartphones or tablets, or on desktop computers. It involves a range of tasks including
+            planning, designing, coding, testing, and deploying applications. App development focuses on building
+            applications that are user-friendly, efficient, and provide value to the user.
+
+
+          </p>
+          <a href="#" style="color: burlywood;">Lean more-></a>
+
+        </div>
+        <div style="cursor: pointer;">
+          <i class="fa-solid fa-code"></i>
+          <h2>DSA Roadmap</h2>
+          <p>A Data Structures and Algorithms (DSA) Roadmap is a structured path that guides learners through the
+            concepts, techniques, and best practices necessary to master data structures and algorithms. This roadmap
+            helps in building a strong foundation in computer science, essential for solving computational problems
+            efficiently, and is crucial for software development, coding interviews, and competitive programming.
+          </p>
+          <a href="#" style="color: burlywood;">Lean more-></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- --------------------contact section start here------========----- -->
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> shivangjha7@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +91-9586255069</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/shivang021/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/shivangjhaa/?next=%2F"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/Shivangjha7"><i class="fab fa-twitter-square"></i></a>
+          </div>
+          <a href="CV sample.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="copyright">
+    <p>Copyright @ SJ. Made by Shivang Jha</p>
+  </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzfaANA-gSCi8-uSPs03t7YVK_qD5bmaWyuOFgQ7mTlXcccqhzktkb-S2jzpSdvgIpzZA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+
+          msg.innerHTML = "Message sent successfully"
+          setTimeout(function () {
+            msg.innerHTML = ""
+          }, 5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+
+</html>
